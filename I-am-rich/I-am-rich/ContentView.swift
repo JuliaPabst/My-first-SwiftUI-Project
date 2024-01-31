@@ -14,8 +14,7 @@ struct ContentView: View {
             VStack{
                 Text("I am rich!")
                     .fontWeight(.bold).font(.system(size: 50)).foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 1.0))
-                Image("Icon-1024")
-                
+                Image("Icon-1024").resizable().aspectRatio(contentMode: .fit).frame(width: 100, height: 100, alignment: .center)
             }
         }
     }
